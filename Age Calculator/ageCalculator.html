@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="login.css" />
+    <script type="text/javascript" src="calulator.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Age Calculator</h1>
+
+        <!-- Form for get use input -->
+        <form name="frm" onsubmit="return Validation();">
+          <table>
+            <tr>
+              <td>Date of Birth:</td>
+              <td><input type="number" id="dob" /></td>
+            </tr>
+            <tr>
+              <td>Month:</td>
+              <td><input type="number" id="month" min="1" max="12" /></td>
+            </tr>
+            <tr>
+              <td>Year:</td>
+              <td><input type="number" id="year" /></td>
+            </tr>
+            <tr>
+              <td>Your age:</td>
+              <td>
+                <p id="result"></p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Submit button -->
+          <div class="btn">
+            <button class="butt_submit" type="submit" onclick="CalculateAge()">
+              Calculate Age
+            </button>
+            <button class="btn_reset" type="reset" onclick="window.location.reload()">
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
